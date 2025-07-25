@@ -1,0 +1,79 @@
+/* shared styles */
+.inter-normal {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.noto-normal {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+
+.primary-light {
+    color: #8987A1;
+}
+
+.primary-dark {
+    color: black;
+    font-weight: 500px;
+}
+
+/* nav styles */
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 150px
+}
+
+.nav-home {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 48px;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* banner styles */
+section {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: flex-end;
+margin-left: 213px;
+margin-right:87px ;
+}
+
+.sec1 {
+    font-weight: 700px;
+    font-size: 65px;
+}
+
+.sec2 {
+    font-weight: 700px;
+    font-size: 65px;
+    color: #E95A08;
+    text-align: center;
+}
+
+.sec3 {
+    font-size: 18px;
+}
+/* plant styles */
+
