@@ -25,16 +25,30 @@
 /* nav styles */
 nav {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin: 0px 150px
+    width: 100%;
+}
+
+.nav-logo {
+    margin-left: 70px;
 }
 
 .nav-home {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 700;
     color: black;
+}
+
+.nav-shop-about {
+    color: #8987A1;
+}
+
+.nav-cart {
+    font-size: 1rem;
+    font-weight: semibold;
+    color: black;
+
 }
 
 nav ul {
@@ -43,7 +57,7 @@ nav ul {
 
 nav ul li {
     list-style: none;
-    margin-right: 48px;
+    margin-right: 3rem;
 }
 
 nav li a {
@@ -51,29 +65,138 @@ nav li a {
 }
 
 /* banner styles */
-section {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: flex-end;
-margin-left: 213px;
-margin-right:87px ;
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 1140px;
 }
 
 .sec1 {
     font-weight: 700px;
-    font-size: 65px;
+    font-size: 4rem;
+    text-align: left;
+
 }
 
 .sec2 {
+    text-align: left;
     font-weight: 700px;
-    font-size: 65px;
+    font-size: 4rem;
     color: #E95A08;
-    text-align: center;
+
 }
 
 .sec3 {
-    font-size: 18px;
+    text-align: left;
+    font-size: 1.125rem;
 }
-/* plant styles */
 
+/* plant styles */
+.plants {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* plants text styles */
+.our {
+    font-size: 50px;
+    color: #E95A08;
+}
+
+.plants-text {
+    align-items: center;
+    text-align: center;
+    color: black;
+    margin: 0 16px;
+}
+
+/* plants grid contents */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 5px;
+}
+
+.text {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    margin: 20px;
+}
+
+.para1 {
+    padding: 0 250px;
+    text-align: center;
+    font-size: 1.125rem;
+    width: 100%;
+}
+
+.para2 {
+    padding: 0 250px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    width: 100%;
+}
+
+
+.btn {
+    background-color: #E95A08;
+    color: white;
+    text-align: center;
+    padding: 20px 50px;
+    border: none;
+    width: 100%;
+    font-weight: bolder;
+}
+
+
+
+/* responsive media query */
+@media screen and (max-width: 430px) {
+
+    /* nav responsive */
+    .nav-home,
+    .nav-shop-about {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* banner responsive */
+    .banner {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* plants responsive */
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, auto);
+        column-gap: 5px;
+    }
+    .hide-on-mobile {
+    display: none;
+  }
+    .our,
+    .plants-text{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
