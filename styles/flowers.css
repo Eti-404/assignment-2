@@ -1,4 +1,10 @@
 /* shared styles */
+.section-container {
+    width: 1140px;
+    margin: 0 auto;
+
+}
+
 .inter-normal {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -28,9 +34,6 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 0 auto;
-    width: 1140px;
-    ;
 }
 
 .nav-logo {
@@ -73,9 +76,6 @@ nav li a {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
-    margin: 0 auto;
-    width: 1140px;
 }
 
 .sec1 {
@@ -103,24 +103,25 @@ nav li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 /* plants text styles */
 .our {
-    font-size: 50px;
+    font-size: 3.5rem;
     color: #E95A08;
+    margin-left: 50px;
 }
 
 .plants-text {
-    align-items: center;
-    text-align: center;
     color: black;
-    margin: 0 16px;
+    font-size: 3.5rem;
+    
 }
 
 .para-plants {
-    text-align: center;
-    font-size: 1.1375rem;
+    font-size: 1.rem;
+    margin-left: 50px;
 }
 
 /* plants grid contents */
@@ -139,19 +140,18 @@ nav li a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 250px;
     margin: 20px;
 }
 
 .para1 {
-    padding: 0 250px;
+    padding: 0 20px;
     text-align: center;
     font-size: 1.125rem;
     width: 100%;
 }
 
 .para2 {
-    padding: 0 250px;
+    padding: 0 20px;
     text-align: center;
     font-weight: bold;
     font-size: 1.125rem;
@@ -163,7 +163,7 @@ nav li a {
     background-color: #E95A08;
     color: white;
     text-align: center;
-    padding: 20px 50px;
+    padding: 20px 0px;
     border: none;
     width: 100%;
     font-weight: bolder;
@@ -173,27 +173,37 @@ nav li a {
 .lover {
     display: flex;
     justify-content: space-between;
-    margin: 90px auto;
-    width: 1140px;
-    gap: 100px;
+    margin: 30px auto;
 }
 
 .lover-img {
-    width: 50%;
-    padding-top: 10%;
+    margin-top: 60px;
+    margin-left: 50px;
+}
+
+.badge {
+    position: absolute;
+    left: 28rem;
+    
+}
+
+.badge-img {
+    position: relative;
+    width: 260px;
 }
 
 .lover-text {
     display: flex;
     flex-direction: column;
-    width: 50%;
-
+    margin-left: 50px;
 }
 
 .fp-text {
     font-size: 3.9rem;
     font-weight: 700px;
     text-align: left;
+    margin-left: 30px;
+
 }
 
 .list-text {
@@ -210,128 +220,156 @@ nav li a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 40px auto;
 }
 
 .ld-text {
-    text-align: center;
-    font-size: 1.1375rem;
+    align-items: center;
 }
 
 .latest {
-    font-size: 50px;
+    font-size: 3.5rem;
     color: #E95A08;
+    text-align: center;
+
 }
 
 .deals {
-    align-items: center;
+
     text-align: center;
     color: black;
-    margin: 0 16px;
+    font-size: 3.5rem;
 }
 
 /* grid styles */
+
 .deals-grid {
     display: grid;
     grid-template-columns: 1fr 2fr;
     gap: 20px;
-    padding: 20px;
-    align-items: center;
+    margin: 0 auto;
+
 }
 
 .grid-box-small {
-    border-radius: 10px;
+    position: relative;
     height: 200px;
-    align-items: center;
+
 }
 
 .grid-box-large {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    position: relative;
+}
+
+.grid-box-small img,
+.grid-box-large img {
+    width: 100%;
+    height: 100%;
     border-radius: 10px;
-    height: 200px;
-    align-items: center;
 }
 
-.grid-text {
+/* Text styling inside images */
+.zabo-text {
     position: absolute;
-    padding: 10px 15px;
-    color: red;
+    top: 100px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
+    text-align: center;
 }
 
-.grid-text p {
-    font-size: 18px;
-    padding: 25px 50px;
-    font-weight: bold;
+.bloom-text,
+.ana-text {
+    position: absolute;
+    top: 30px;
+    bottom: 30px;
+    left: 30px;
+    right: 30px;
     text-align: center;
-    color: red;
 }
 
-.grid-text a {
-    font-size: 18px;
-    padding: 25px 50px;
+
+
+.zabo-text p,
+.zabo-text a {
+    font-size: 2.5rem;
     font-weight: bold;
-    text-align: center;
-    color: red;
+    color: white;
+
+}
+
+.bloom-text p,
+.ana-text p {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
+}
+
+.bloom-text a,
+.ana-text a {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: white;
 }
 
 /* join styles */
-.join {
-    align-items: center;
-    margin: 70px 0 0 0;
-}
 
-.join-img {
+.subscribe-section {
     display: flex;
-    flex-direction: column;
     align-items: center;
-}
-
-.join-text {
+    justify-content: space-between;
+    flex-direction: column;
     color: white;
-    position: absolute;
-    font-size: 4rem;
+}
+
+.subscribe-section h1 {
     text-align: center;
-    padding-top: 100px;
+    position: absolute;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 120px;
 }
 
-.mailbox {
-    margin: 300px;
-    align-items: flex-start;
+.form-container {
     position: absolute;
-    height: 40px;
-    width: 45%;
+    display: flex;
+    width: 700px;
+    height: 60px;
+    background: white;
+    margin-top: 250px;
+}
+
+.form-container input[type="email"] {
+    flex: 1;
+    padding: 15px;
+    border: none;
     font-size: 1rem;
-    text-align: left;
-    padding-left: 30px;
 }
 
-.btn2 {
-    position: absolute;
+.form-container button {
     background-color: #E95A08;
     color: white;
-    text-align: center;
-    padding-right: 30px;
     border: none;
-    height: 40px;
-    margin: 300px;
-    align-items: flex-end;
+    padding: 0 25px;
+    font-size: 1rem;
+    font-weight: 700;
+
 }
 
 /* footer styles */
 .footer-class {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 50px 160px;
-}
-
-.footer-icon {
-    display: flex;
     justify-content: space-between;
-    gap: 1.5rem;
+    align-items: center;
+    margin-top: 30px;
 }
 
 footer div p,
 a {
     font-size: 1.125rem;
+    text-align: left;
 }
 
 footer ul li {
@@ -345,65 +383,252 @@ footer li a {
     color: #8987A1;
 }
 
+.footer-icon {
+    display: flex;
+    gap: 1rem;
+}
+
+
 /* responsive media query */
 @media screen and (max-width: 430px) {
+
     .hide-on-mobile {
         display: none;
     }
 
     /* nav responsive */
+    .section-container {
+        width: 430px;
+        margin: 0 auto;
+    }
 
-    nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .nav-logo {
+        margin-left: 2px;
     }
 
     /* banner responsive */
     .banner {
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+
+    .banner-img {
+        width: 400px;
+    }
+
+    .sec1,
+    .sec2 {
+        font-size: 2.6rem;
+        text-align: left;
+    }
+
+    .sec3 {
+        font-size: 1rem;
+        text-align: left;
     }
 
     /* plants responsive */
+    .plants {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .our {
+        font-size: 2.5rem;
+        margin-left: 70px;
+    }
+
+    .plants-text {
+        
+        font-size: 2.5rem;
+    }
+.para-plants {
+   margin-left: 70px;
+    font-size: 1rem;
+}
+
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(3, auto);
-        column-gap: 5px;
-        align-items: center;
+        column-gap: 2px;
+        width: 400px;
     }
 
-    .our,
-    .plants-text {
-        display: flex;
-        justify-content: center;
-        text-align: center;
+    .lily-img {
+        width: 200px;
     }
 
     /* lover responsive*/
     .lover {
         display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
         flex-direction: column;
-        width: 1140px;
+    }
+
+    .lover-text {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .lover-img {
+        align-items: center;
+        width: 390px;
+    }
+
+    .fp-text {
+
+        text-align: left;
+        font-size: 2rem;
+        margin-left: 0;
+    }
+
+    .list-text {
+        font-size: 1rem;
+        width: 400px;
+        text-align: left;
+        margin-left: 0;
     }
 
     /* latest deals responsive */
-    /* .LD,
-    .ld-text,
-    .deals-grid
-     {
-      display: flex;
-        flex-direction: column;
-        width: 100%;
-     
-    } 
-        /* footer */
-    .footer-class {
+    .LD {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        width: 400px;
     }
+
+    .latest {
+        font-size: 2.5rem;
+        margin-left: 70px;
+    }
+
+    .deals {
+        font-size: 2.5rem;
+    }
+    
+    .deals-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 400px;
+         margin-left: 40px;
+    }
+
+    .offer-img {
+        width: 400px;
+    }
+
+    .grid-box-small img,
+    .grid-box-large img {
+        width: 400px;
+        border-radius: 10px;
+    }
+
+    /* Text styling inside images */
+    .zabo-text {
+        position: absolute;
+        top: 30px;
+        bottom: 30px;
+        left: 30px;
+        right: 30px;
+        text-align: center;
+    }
+
+    .bloom-text,
+    .ana-text {
+        position: absolute;
+        top: 30px;
+        bottom: 30px;
+        left: 30px;
+        right: 30px;
+        text-align: center;
+    }
+
+    .zabo-text p,
+    .zabo-text a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .bloom-text p,
+    .ana-text p {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    }
+
+    .bloom-text a,
+    .ana-text a {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: white;
+    }
+
+
+    /* join responsive */
+    .join-img {
+        width: 580px;
+        left: 0;
+        top: 4.5px;
+    }
+
+    .subscribe-section {
+        justify-content: center;
+        align-items: center;
+        width: 430px;
+        padding: 34px;
+    }
+
+    .subscribe-section h1 {
+        justify-content: center;
+        width: 340px;
+        text-align: center;
+        font-size: 1.5rem;
+        margin-bottom: 40px;
+
+    }
+
+    .form-container {
+        justify-content: center;
+        width: 30px;
+        margin-bottom: 10px;
+        margin-top: 90px;
+    }
+
+    /* footer responsive */
+    .footer-class {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+    margin: 40px auto;
+}
+
+footer div p{
+    font-size: 1.125rem;
+    margin: 16px 0px;
+    text-align: left;
+    
+}
+
+footer ul li {
+    margin: 20px 0px;
+    
+}
+
+footer li a {
+    text-decoration: none;
+    color: #8987A1;
+}
+
+.footer-icon {
+    display: flex;
+    align-items:center ;
+    gap:30px;
+}
