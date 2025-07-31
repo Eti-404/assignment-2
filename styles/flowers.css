@@ -182,10 +182,8 @@ nav li a {
 .badge-img {
     position: absolute;
     width: 260px;
-    left: 370px;
-    top: -90px;
-    right: -90px;
-
+    left: 380px;
+    top:-90px;
 }
 
 .lover-text {
@@ -319,16 +317,18 @@ nav li a {
     justify-content: space-between;
     flex-direction: column;
     color: white;
+    width: 100%;
 }
 
 .subscribe-section h1 {
-    margin: 30px 60px;
     position: absolute;
     font-size: 3rem;
     font-weight: bold;
     padding: 120px;
 }
-
+.join-img{
+    width: 100%;
+}
 .form-container {
     position: absolute;
     display: flex;
